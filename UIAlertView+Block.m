@@ -44,6 +44,24 @@
 
 - (instancetype)initWithTitle:(NSString *)title message:(NSString *)message
             cancelButtonTitle:(NSString *)cancelButtonTitle
+             otherButtonTitle:(NSString *)otherButtonTitle
+{
+    return [self initWithTitle:title message:message
+             cancelButtonTitle:cancelButtonTitle
+             otherButtonTitles:@[otherButtonTitle]];
+}
+
+- (instancetype)initWithMessage:(NSString *)message
+              cancelButtonTitle:(NSString *)cancelButtonTitle
+               otherButtonTitle:(NSString *)otherButtonTitle
+{
+    return [self initWithMessage:message
+             cancelButtonTitle:cancelButtonTitle
+             otherButtonTitles:@[otherButtonTitle]];
+}
+
+- (instancetype)initWithTitle:(NSString *)title message:(NSString *)message
+            cancelButtonTitle:(NSString *)cancelButtonTitle
 {
     return [self initWithTitle:title message:message
              cancelButtonTitle:cancelButtonTitle otherButtonTitles:nil];

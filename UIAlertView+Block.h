@@ -19,6 +19,14 @@
               otherButtonTitles:(NSArray *)otherButtonTitles;
 
 - (instancetype)initWithTitle:(NSString *)title message:(NSString *)message
+            cancelButtonTitle:(NSString *)cancelButtonTitle
+            otherButtonTitle:(NSString *)otherButtonTitle;
+
+- (instancetype)initWithMessage:(NSString *)message
+              cancelButtonTitle:(NSString *)cancelButtonTitle
+              otherButtonTitle:(NSString *)otherButtonTitle;
+
+- (instancetype)initWithTitle:(NSString *)title message:(NSString *)message
             cancelButtonTitle:(NSString *)cancelButtonTitle;
 
 - (instancetype)initWithMessage:(NSString *)message
