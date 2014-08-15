@@ -37,7 +37,7 @@
               cancelButtonTitle:(NSString *)cancelButtonTitle
               otherButtonTitles:(NSArray *)otherButtonTitles
 {
-    NSString *title = [NSBundle mainBundle].infoDictionary[@""];
+    NSString *title = [NSBundle mainBundle].localizedInfoDictionary[@"CFBundleDisplayName"];
     return [self initWithTitle:title message:message
              cancelButtonTitle:cancelButtonTitle otherButtonTitles:otherButtonTitles];
 }
