@@ -1,6 +1,6 @@
 //
 //  UIAlertView+Block.h
-//  asdfasdf
+//  UIAlertView+Block
 //
 //  Created by Jonghwan Hyeon on 8/14/14.
 //  Copyright (c) 2014 Jonghwan Hyeon. All rights reserved.

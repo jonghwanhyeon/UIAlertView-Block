@@ -1,6 +1,6 @@
 //
 //  UIAlertView+Block.m
-//  asdfasdf
+//  UIAlertView+Block
 //
 //  Created by Jonghwan Hyeon on 8/14/14.
 //  Copyright (c) 2014 Jonghwan Hyeon. All rights reserved.
@@ -29,7 +29,7 @@
             [self addButtonWithTitle:otherButtonTitle];
         }
     }
-    
+
     return self;
 }
 
@@ -88,7 +88,7 @@
 {
     self.delegate = self;
     self.block = block;
-    
+
     [self show];
 }
 
