@@ -1,5 +1,7 @@
 # UIAlertView+Block
 
+UIAlertView category to replace UIAletViewDelegate by block
+
 ## Usage
 
     [[[UIAlertView alloc] initWithTitle:@"Alert" message:@"Do you want to delete this item?"
@@ -9,6 +11,7 @@
              // delete
          }
      }];
+
 
     [[[UIAlertView alloc] initWithTitle:@"Alert" message:@"What do you want?"
                       cancelButtonTitle:@"Cancel"
@@ -22,6 +25,7 @@
              // delete
          }
      }];
+
 
     [[[UIAlertView alloc] initWithMessage:@"Timer done"
                         cancelButtonTitle:@"Okay"]
