@@ -99,4 +99,22 @@
     }
 }
 
+- (BOOL)alertViewShouldEnableFirstOtherButton:(UIAlertView *)alertView {
+    
+    if (alertView.alertViewStyle == UIAlertViewStyleSecureTextInput ||
+        alertView.alertViewStyle == UIAlertViewStylePlainTextInput) {
+        
+        UITextField *textField = [alertView textFieldAtIndex:0];
+        return textField.text.length;
+    }
+    else if (alertView.alertViewStyle == UIAlertViewStyleLoginAndPasswordInput) {
+        
+        UITextField *username = [alertView textFieldAtIndex:0];
+        UITextField *password = [alertView textFieldAtIndex:1];
+        return (username.text.length && password.text.length);
+    }
+    
+    return YES;
+}
+
 @end
